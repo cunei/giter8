@@ -1,7 +1,7 @@
 import Dependencies._
 import sbt.Def
 
-lazy val g8version = "0.7.3-SNAPSHOT"
+lazy val g8version = "0.7.3-toni1"
 
 lazy val commonScriptedSettings = scriptedSettings ++ Seq(
   scriptedLaunchOpts ++= sys.process.javaVmArguments.filter(
@@ -28,7 +28,7 @@ lazy val root = (project in file("."))
   .settings(
     inThisBuild(
       Seq(
-        organization := "org.foundweekends.giter8",
+        organization := "com.cunei",
         version := g8version,
         scalaVersion := "2.10.6",
         organizationName := "foundweekends",
